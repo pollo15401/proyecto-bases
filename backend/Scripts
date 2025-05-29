@@ -1,0 +1,37 @@
+SELECT id_asignatura, nombre, docente_id FROM asignaturas
+SELECT id_asignatura, nombre, docente_id FROM asignaturas WHERE id_asignatura = :id
+UPDATE asignaturas SET nombre = :nombre, docente_id = :docente_id WHERE id_asignatura = :id
+DELETE FROM asignaturas WHERE id_asignatura = :id
+backend/models/asistencia.js:
+
+SELECT id_asistencia, estudiante_id, fecha, estado FROM asistencias
+SELECT id_asistencia, estudiante_id, fecha, estado FROM asistencias WHERE id_asistencia = :id
+UPDATE asistencias SET estudiante_id = :estudiante_id, fecha = :fecha, estado = :estado WHERE id_asistencia = :id
+DELETE FROM asistencias WHERE id_asistencia = :id
+backend/models/docente.js:
+
+SELECT id_docente, nombre, apellido, especialidad FROM docentes
+SELECT id_docente, nombre, apellido, especialidad FROM docentes WHERE id_docente = :id
+UPDATE docentes SET nombre = :nombre, apellido = :apellido, especialidad = :especialidad WHERE id_docente = :id
+DELETE FROM docentes WHERE id_docente = :id
+backend/models/estudiante.js:
+
+SELECT id_estudiante, nombre, apellido, fecha_nacimiento, grupo_id FROM estudiantes
+SELECT id_estudiante, nombre, apellido, fecha_nacimiento, grupo_id FROM estudiantes WHERE id_estudiante = :id
+UPDATE estudiantes SET nombre = :nombre, apellido = :apellido, fecha_nacimiento = :fecha_nacimiento, grupo_id = :grupo_id WHERE id_estudiante = :id
+DELETE FROM estudiantes WHERE id_estudiante = :id
+backend/models/evaluacion.js:
+
+SELECT id_evaluacion, estudiante_id, asignatura_id, calificacion, fecha FROM evaluaciones
+SELECT id_evaluacion, estudiante_id, asignatura_id, calificacion, fecha FROM evaluaciones WHERE id_evaluacion = :id
+UPDATE evaluaciones SET estudiante_id = :estudiante_id, asignatura_id = :asignatura_id, calificacion = :calificacion, fecha = :fecha WHERE id_evaluacion = :id
+DELETE FROM evaluaciones WHERE id_evaluacion = :id
+backend/models/grupo.js:
+
+SELECT id_grupo, nombre_grupo, grado, ciclo_escolar FROM grupos
+SELECT id_grupo, nombre_grupo, grado, ciclo_escolar FROM grupos WHERE id_grupo = :id
+UPDATE grupos SET nombre_grupo = :nombre_grupo, grado = :grado, ciclo_escolar = :ciclo_escolar WHERE id_grupo = :id
+DELETE FROM grupos WHERE id_grupo = :id
+backend/controllers/authController.js:
+
+SELECT USER_ID, username, USER_PASSWORD FROM users WHERE username = :username
