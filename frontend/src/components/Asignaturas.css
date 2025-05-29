@@ -1,0 +1,89 @@
+
+/* Contenedor Principal de Asistencias */
+.asistencias-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px; /* Un poco más de padding */
+  background-color: #f8f9fa; /* Gris muy claro, casi blanco */
+  border-radius: 8px; /* Bordes más redondeados */
+  border: 1px solid #dee2e6; /* Borde gris claro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra sutil para profundidad */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* Fuente moderna y legible */
+  color: #495057; /* Color de texto principal (gris oscuro) */
+}
+
+/* Título de la Sección */
+.asistencias-title {
+  font-size: 26px; /* Ligeramente más grande */
+  margin-bottom: 25px; /* Más espacio debajo del título */
+  color: #343a40; /* Gris oscuro, casi negro, para el título */
+  font-weight: 600; /* Un poco más de peso */
+}
+
+/* Tabla de Asistencias */
+.asistencias-table {
+  width: 100%;
+  border-collapse: collapse; /* Mantiene los bordes colapsados */
+  margin-bottom: 25px; /* Más espacio debajo de la tabla */
+  background-color: #ffffff; /* Fondo blanco para la tabla para que resalte sobre el contenedor */
+  border-radius: 6px; /* Bordes redondeados para la tabla también (si se muestra el borde exterior) */
+  overflow: hidden; /* Para que el border-radius afecte a las celdas si es necesario */
+}
+
+/* Celdas de Cabecera y Datos de la Tabla */
+.asistencias-table th,
+.asistencias-table td {
+  padding: 12px 15px; /* Padding más generoso para las celdas */
+  text-align: left;
+  border-bottom: 1px solid #e9ecef; /* Borde inferior gris muy claro para las filas */
+}
+
+/* Cabecera de la Tabla */
+.asistencias-table th {
+  background-color: #e9ecef; /* Fondo gris claro para la cabecera */
+  color: #495057; /* Texto gris oscuro para la cabecera */
+  font-weight: 600; /* Texto en negrita para la cabecera */
+  font-size: 14px; /* Tamaño de fuente para cabeceras */
+  text-transform: uppercase; /* Opcional: Mayúsculas para cabeceras */
+  letter-spacing: 0.5px; /* Opcional: Ligero espaciado entre letras */
+}
+
+/* Filas Pares de la Tabla (para efecto cebra) */
+.asistencias-table tr:nth-child(even) {
+  background-color: #f8f9fa; /* Gris muy, muy claro para filas pares, sutilmente diferente del fondo de tabla blanco */
+}
+
+/* Quitar el borde inferior de la última fila para un look más limpio */
+.asistencias-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Última Celda de cada Fila (donde suelen ir acciones) */
+.asistencias-table td:last-child {
+  text-align: center; /* Mantenemos centrado si es para botones/iconos */
+  color: #495057; /* Color de texto por defecto */
+}
+
+/* Botón de Asistencias */
+.asistencias-button {
+  padding: 8px 15px; /* Padding más cómodo para el botón */
+  border: none;
+  border-radius: 5px; /* Bordes redondeados para el botón */
+  background-color: #007bff; /* Azul primario (color neutro de acción común) */
+  color: #ffffff; /* Texto blanco para contraste */
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease; /* Transición suave */
+}
+
+.asistencias-button:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+  transform: translateY(-1px); /* Ligero efecto de elevación */
+}
+
+.asistencias-button:active {
+  background-color: #004085; /* Azul aún más oscuro al hacer clic */
+  transform: translateY(0px);
+}

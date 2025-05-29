@@ -1,0 +1,55 @@
+.estudiantes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #e9ecef;
+  border-radius: 10px;
+}
+
+.estudiantes-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.estudiantes-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.estudiantes-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.estudiantes-list-item:last-child {
+  border-bottom: none;
+}
+
+.estudiantes-item-name {
+  font-size: 16px;
+  color: #555;
+}
+
+.estudiantes-item-actions {
+  display: flex;
+}
+
+.estudiantes-button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fd7e14;
+  color: white;
+  cursor: pointer;
+}
+
+.estudiantes-button:hover {
+  background-color: #e06200;
+}
